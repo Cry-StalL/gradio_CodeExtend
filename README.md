@@ -1,13 +1,3 @@
----
-tags: [gradio-custom-component, Code]
-title: gradio_codeextend
-short_description: A gradio custom component
-colorFrom: blue
-colorTo: yellow
-sdk: gradio
-pinned: false
-app_file: space.py
----
 
 # `gradio_CodeExtend`
 这是一个[Gradio](https://github.com/gradio-app/gradio)的[自定义组件(Custom Component)](https://www.gradio.app/guides/custom-components-in-five-minutes)，基于Gradio中的[Code组件](https://www.gradio.app/docs/gradio/code)修改，增加了若干编程语言的支持。
