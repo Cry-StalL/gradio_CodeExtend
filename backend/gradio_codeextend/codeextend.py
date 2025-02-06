@@ -47,6 +47,15 @@ class CodeExtend(Component):
         "sql-gpSQL",
         "sql-sparkSQL",
         "sql-esper",
+        # 以下为拓展语言
+        "go",
+        "java",
+        "liquid",
+        "php",
+        "rust",
+        "scss",
+        "vue",
+        "xml",
         None,
     ]
 
@@ -88,6 +97,15 @@ class CodeExtend(Component):
             "sql-gpSQL",
             "sql-sparkSQL",
             "sql-esper",
+
+            "go",
+            "java",
+            "liquid",
+            "php",
+            "rust",
+            "scss",
+            "vue",
+            "xml",
         ]
         | None = None,
         *,

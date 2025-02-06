@@ -18,7 +18,8 @@ const possible_langs = [
 	"dockerfile",
 	"shell",
 	"r",
-	"sql"
+	"sql",
+	"go"
 ];
 
 const sql_dialects = [
@@ -95,7 +96,25 @@ const lang_map: Record<string, (() => Promise<Extension>) | undefined> = {
 					StreamLanguage.define(m[dialect])
 				)
 		])
-	)
+	),
+
+	go: () =>
+		import("@codemirror/lang-go").then((m) => m.go()),
+	java: () =>
+		import("@codemirror/lang-java").then((m) => m.java()),
+	liquid: () =>
+		import("@codemirror/lang-liquid").then((m) => m.liquid()),
+	php: () =>
+		import("@codemirror/lang-php").then((m) => m.php()),
+	rust: () =>
+		import("@codemirror/lang-rust").then((m) => m.rust()),
+	scss: () =>
+		import("@codemirror/lang-sass").then((m) => m.sass()), // 该库支持sass/SCSS，其中有一个indented参数(When enabled, support classical indentation-based syntax)，默认为false，即SCSS syntax
+	vue: () =>
+		import("@codemirror/lang-vue").then((m) => m.vue()),
+	xml: () =>
+		import("@codemirror/lang-xml").then((m) => m.xml()),
+
 } as const;
 
 const alias_map: Record<string, string> = {

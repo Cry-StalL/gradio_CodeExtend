@@ -7,8 +7,8 @@ example = CodeExtend().example_value()
 
 demo = gr.Interface(
     lambda x:x,
-    CodeExtend(),  # interactive version of your component
-    CodeExtend(),  # static version of your component
+    CodeExtend(language="vue"),  # interactive version of your component
+    CodeExtend(language="vue"),  # static version of your component
     # examples=[[example]],  # uncomment this line to view the "example version" of your component
 )
 

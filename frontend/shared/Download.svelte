@@ -29,7 +29,16 @@
 			shell: "sh",
 			r: "r",
 			c: "c",
-			cpp: "cpp"
+			cpp: "cpp",
+
+			go: "go",
+			java: "java",
+			liquid: "liquid",
+			php: "php",
+			rust: "rs",
+			scss: "scss",
+			vue: "vue",
+			xml: "xml",
 		};
 
 		return exts[type] || "txt";
